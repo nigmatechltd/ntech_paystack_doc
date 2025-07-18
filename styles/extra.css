@@ -1,7 +1,7 @@
 .md-header {
-  background-color: #44a5af;
+  background-color: #44a5af !important;
 }
 
 .md-header__title, .md-tabs__link {
-  color: white;
+  color: white !important;
 }
