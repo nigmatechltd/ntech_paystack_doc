@@ -1,0 +1,77 @@
+site_name: Ntech Paystack
+site_description: Paystack Integration for ERPNext
+site_url: https://nigmatechltd.github.io/ntech_paystack/
+
+nav:
+  - Introduction: index.md
+  - Installation & Setup: installation.md
+  - User Roles & Permissions: roles.md
+  - Paystack Settings: settings.md
+  - Payment Request Flow: payment_flow.md
+  - API Reference: api.md
+  - Developer Guide: developer_guide.md
+  - Troubleshooting: troubleshooting.md
+  - Changelog: changelog.md
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - search.highlight
+    - search.suggest
+    - search.share
+    - content.code.annotation
+    - content.code.copy
+    - content.code.multiline
+    - content.tables
+    - content.tabs.link
+    - toc.integrate
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/lightbulb
+        name: Switch to light mode
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to dark mode
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+plugins:
+  - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/nigmatechltd
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/nigmatechltd
+  analytics:
+    provider: google
+    property: UA-XXXXXXXXX-X
+
+edit_uri: edit/main/docs/
