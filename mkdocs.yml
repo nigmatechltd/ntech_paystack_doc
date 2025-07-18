@@ -44,6 +44,8 @@ theme:
       toggle:
         icon: material/lightbulb-outline
         name: Switch to dark mode
+  logo: assets/nigmatechnologies_logo.png
+
 
 markdown_extensions:
   - admonition
@@ -73,5 +75,8 @@ extra:
   analytics:
     provider: google
     property: UA-XXXXXXXXX-X
+
+copyright: 
+  © 2025 <a href="https://github.com/nigmatechltd" target="_blank" rel="noopener">Nigma Tech Ltd</a> | All Rights Reserved
 
 edit_uri: edit/main/docs/
