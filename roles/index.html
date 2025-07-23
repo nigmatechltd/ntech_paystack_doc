@@ -819,33 +819,37 @@
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <p>Ntech Paystack implements a role-based access control system with two primary user types:</p>
 <ol>
-<li><strong>Admin User</strong></li>
+<li>
+<p><strong>Admin User</strong></p>
+<ul>
 <li>Full access to configure Paystack settings</li>
 <li>Can generate all types of payment flows</li>
 <li>Access to webhook management</li>
-<li>
-<p>View all payment requests</p>
+<li>View all payment requests</li>
+</ul>
 </li>
 <li>
 <p><strong>Payments User</strong></p>
-</li>
+<ul>
 <li>Limited access to generate payments only</li>
 <li>Can view their own payment requests</li>
 <li>No access to settings or configuration</li>
+</ul>
+</li>
 </ol>
 <h2 id="role-configuration">Role Configuration<a class="headerlink" href="#role-configuration" title="Permanent link">&para;</a></h2>
 <h3 id="admin-user-role">Admin User Role<a class="headerlink" href="#admin-user-role" title="Permanent link">&para;</a></h3>
 <p>Permissions:
-- <strong>Paystack Settings</strong>: Read, Write, Create, Delete
-- <strong>Payment Request</strong>: Read, Write, Create
-- <strong>Payment Entry</strong>: Read
-- <strong>Webhook Log</strong>: Read
-- <strong>System Settings</strong>: Read, Write</p>
+      - <strong>Paystack Settings</strong>: Read, Write, Create, Delete
+      - <strong>Payment Request</strong>: Read, Write, Create
+      - <strong>Payment Entry</strong>: Read
+      - <strong>Webhook Log</strong>: Read
+      - <strong>System Settings</strong>: Read, Write</p>
 <h3 id="payments-user-role">Payments User Role<a class="headerlink" href="#payments-user-role" title="Permanent link">&para;</a></h3>
 <p>Permissions:
-- <strong>Payment Request</strong>: Read, Write, Create (own records only)
-- <strong>Payment Entry</strong>: Read (own records only)
-- <strong>Webhook Log</strong>: Read (own records only)</p>
+      - <strong>Payment Request</strong>: Read, Write, Create (own records only)
+      - <strong>Payment Entry</strong>: Read (own records only)
+      - <strong>Webhook Log</strong>: Read (own records only)</p>
 <h2 id="role-assignment">Role Assignment<a class="headerlink" href="#role-assignment" title="Permanent link">&para;</a></h2>
 <ol>
 <li>Go to: <strong>Settings &gt; Role Permission Manager</strong></li>
@@ -877,93 +881,109 @@
 <h2 id="role-based-features">Role-Based Features<a class="headerlink" href="#role-based-features" title="Permanent link">&para;</a></h2>
 <h3 id="admin-user-features">Admin User Features<a class="headerlink" href="#admin-user-features" title="Permanent link">&para;</a></h3>
 <ol>
-<li><strong>Configuration Management</strong></li>
+<li>
+<p><strong>Configuration Management</strong></p>
+<ul>
 <li>Set up Paystack API keys</li>
 <li>Configure webhook settings</li>
 <li>Manage IP whitelisting</li>
-<li>
-<p>Set up payment gateway options</p>
+<li>Set up payment gateway options</li>
+</ul>
 </li>
 <li>
 <p><strong>System Monitoring</strong></p>
-</li>
+<ul>
 <li>View all payment requests</li>
 <li>Monitor webhook logs</li>
 <li>Track payment statuses</li>
-<li>
-<p>View payment history</p>
+<li>View payment history</li>
+</ul>
 </li>
 <li>
 <p><strong>Security Management</strong></p>
-</li>
+<ul>
 <li>Configure IP restrictions</li>
 <li>Set up signature verification</li>
 <li>Manage user access levels</li>
 <li>Monitor failed attempts</li>
+</ul>
+</li>
 </ol>
 <h3 id="payments-user-features">Payments User Features<a class="headerlink" href="#payments-user-features" title="Permanent link">&para;</a></h3>
 <ol>
-<li><strong>Payment Generation</strong></li>
+<li>
+<p><strong>Payment Generation</strong></p>
+<ul>
 <li>Create payment requests</li>
 <li>View own payment status</li>
 <li>Generate payment links</li>
-<li>
-<p>Track own payment history</p>
+<li>Track own payment history</li>
+</ul>
 </li>
 <li>
 <p><strong>Payment Management</strong></p>
-</li>
+<ul>
 <li>Cancel own payment requests</li>
 <li>View payment details</li>
 <li>Track payment status</li>
 <li>Get payment receipts</li>
+</ul>
+</li>
 </ol>
 <h2 id="best-practices">Best Practices<a class="headerlink" href="#best-practices" title="Permanent link">&para;</a></h2>
 <ol>
-<li><strong>Role Assignment</strong></li>
+<li>
+<p><strong>Role Assignment</strong></p>
+<ul>
 <li>Assign Admin role only to trusted users</li>
 <li>Regularly review user permissions</li>
 <li>Document access levels</li>
-<li>
-<p>Monitor user activity</p>
+<li>Monitor user activity</li>
+</ul>
 </li>
 <li>
 <p><strong>Security</strong></p>
-</li>
+<ul>
 <li>Never share API keys</li>
 <li>Use strong passwords</li>
 <li>Regularly audit permissions</li>
-<li>
-<p>Monitor failed login attempts</p>
+<li>Monitor failed login attempts</li>
+</ul>
 </li>
 <li>
 <p><strong>Monitoring</strong></p>
-</li>
+<ul>
 <li>Track payment request patterns</li>
 <li>Monitor webhook performance</li>
 <li>Watch for unusual activity</li>
 <li>Regularly review logs</li>
+</ul>
+</li>
 </ol>
 <h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h2>
 <h3 id="common-issues">Common Issues<a class="headerlink" href="#common-issues" title="Permanent link">&para;</a></h3>
 <ol>
-<li><strong>Access Denied</strong></li>
-<li>Solution: Verify role permissions</li>
 <li>
-<p>Check: Role Permission Manager</p>
+<p><strong>Access Denied</strong></p>
+<ul>
+<li>Solution: Verify role permissions</li>
+<li>Check: Role Permission Manager</li>
+</ul>
 </li>
 <li>
 <p><strong>Missing Features</strong></p>
-</li>
+<ul>
 <li>Solution: Review role configuration</li>
-<li>
-<p>Check: User permissions</p>
+<li>Check: User permissions</li>
+</ul>
 </li>
 <li>
 <p><strong>Security Alerts</strong></p>
-</li>
+<ul>
 <li>Solution: Review access logs</li>
 <li>Check: User activity history</li>
+</ul>
+</li>
 </ol>
 <h3 id="verification-steps">Verification Steps<a class="headerlink" href="#verification-steps" title="Permanent link">&para;</a></h3>
 <ol>
