@@ -587,15 +587,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#verification-steps" class="md-nav__link">
-    <span class="md-ellipsis">
-      Verification Steps
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -858,19 +849,17 @@ pip<span class="w"> </span>install<span class="w"> </span>frappe
 </ol>
 <h2 id="post-installation-steps">Post-Installation Steps<a class="headerlink" href="#post-installation-steps" title="Permanent link">&para;</a></h2>
 <ol>
-<li>
-<p>Verify installation:
+<li>Verify installation:
    <div class="highlight"><pre><span></span><code>bench<span class="w"> </span>--site<span class="w"> </span><span class="o">[</span>your-site-name<span class="o">]</span><span class="w"> </span>list-apps
-</code></pre></div></p>
-</li>
-<li>
-<p>Check webhook endpoints:
-   <div class="highlight"><pre><span></span><code>bench<span class="w"> </span>--site<span class="w"> </span><span class="o">[</span>your-site-name<span class="o">]</span><span class="w"> </span>get-webhook-endpoints
-</code></pre></div></p>
-</li>
-<li>
-<p>Test the integration:</p>
-</li>
+</code></pre></div></li>
+</ol>
+<!-- 2. Check webhook endpoints:
+   ```bash
+   bench --site [your-site-name] get-webhook-endpoints
+   ``` -->
+
+<ol>
+<li>Test the integration:</li>
 <li>Create a test payment request</li>
 <li>Verify webhook notifications</li>
 <li>Check payment entry creation</li>
@@ -893,19 +882,17 @@ pip<span class="w"> </span>install<span class="w"> </span>frappe
 </li>
 <li>Solution: Verify Paystack API credentials</li>
 </ol>
-<h3 id="verification-steps">Verification Steps<a class="headerlink" href="#verification-steps" title="Permanent link">&para;</a></h3>
-<ol>
-<li>
-<p>Check logs:
+<!-- ### Verification Steps
+
+1. Check logs:
    <div class="highlight"><pre><span></span><code>bench<span class="w"> </span>--site<span class="w"> </span><span class="o">[</span>your-site-name<span class="o">]</span><span class="w"> </span>logs
-</code></pre></div></p>
-</li>
-<li>
-<p>Verify database migrations:
-   <div class="highlight"><pre><span></span><code>bench<span class="w"> </span>--site<span class="w"> </span><span class="o">[</span>your-site-name<span class="o">]</span><span class="w"> </span>migrate-status
-</code></pre></div></p>
-</li>
-</ol>
+</code></pre></div>
+
+2. Verify database migrations:
+   ```bash
+   bench --site [your-site-name] migrate-status
+   ``` -->
+
 <h2 id="best-practices">Best Practices<a class="headerlink" href="#best-practices" title="Permanent link">&para;</a></h2>
 <ol>
 <li>Always test in sandbox mode first</li>
