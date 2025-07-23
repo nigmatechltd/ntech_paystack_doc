@@ -849,21 +849,23 @@ pip<span class="w"> </span>install<span class="w"> </span>frappe
 </ol>
 <h2 id="post-installation-steps">Post-Installation Steps<a class="headerlink" href="#post-installation-steps" title="Permanent link">&para;</a></h2>
 <ol>
-<li>Verify installation:
+<li>
+<p>Verify installation:
    <div class="highlight"><pre><span></span><code>bench<span class="w"> </span>--site<span class="w"> </span><span class="o">[</span>your-site-name<span class="o">]</span><span class="w"> </span>list-apps
-</code></pre></div></li>
+</code></pre></div></p>
+</li>
+<li>
+<p>Test the integration:</p>
+</li>
+<li>Create a test payment request</li>
+<li>Verify webhook notifications</li>
+<li>Check payment entry creation</li>
 </ol>
 <!-- 2. Check webhook endpoints:
    ```bash
    bench --site [your-site-name] get-webhook-endpoints
    ``` -->
 
-<ol>
-<li>Test the integration:</li>
-<li>Create a test payment request</li>
-<li>Verify webhook notifications</li>
-<li>Check payment entry creation</li>
-</ol>
 <h2 id="troubleshooting-installation">Troubleshooting Installation<a class="headerlink" href="#troubleshooting-installation" title="Permanent link">&para;</a></h2>
 <h3 id="common-issues">Common Issues<a class="headerlink" href="#common-issues" title="Permanent link">&para;</a></h3>
 <ol>
